@@ -1,0 +1,91 @@
+openapi: 3.0.4
+info:
+  title: Meteorite Landings
+  description: Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/meteorites:
+    get:
+      summary: Get Meteorites
+      description: Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.
+      operationId: meteorites
+      parameters:
+      - name: name
+        in: query
+        schema:
+          type: string
+        required: false
+        description: The name of the meteorite you want to search for
+        example: Allende
+      - name: mass
+        in: query
+        schema:
+          type: integer
+        required: false
+        description: The mass of the meteorite in grams
+        example: ''
+      - name: year
+        in: query
+        schema:
+          type: integer
+        required: false
+        description: The year the meteorite fell to Earth
+        example: ''
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  count: 1
+                  filteredOn:
+                  - name
+                  meteors:
+                  - name: Allende
+                    recclass: CV3
+                    mass: '2000000'
+                    year: '1969'
+                    geolocation:
+                      type: Point
+                      coordinates:
+                      - -105.31667
+                      - 26.96667
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
