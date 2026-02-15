@@ -48,11 +48,9 @@ namespace APIVerve.API.MeteoriteLandings
         public string Recclass { get; set; }
 
         [JsonProperty("mass")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Mass { get; set; }
 
         [JsonProperty("year")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Year { get; set; }
 
         [JsonProperty("geolocation")]
