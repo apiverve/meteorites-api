@@ -12,7 +12,6 @@ namespace APIVerve.API.MeteoriteLandings
     {
         /// <summary>
         /// The name of the meteorite you want to search for
-        /// Example: Allende
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
