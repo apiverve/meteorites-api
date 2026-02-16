@@ -44,7 +44,11 @@ from apiverve_meteoritelandings.apiClient import MeteoritesAPIClient
 # Initialize the client with your APIVerve API key
 api = MeteoritesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "Allende", "mass": 0, "year": 0 }
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "name": "Allende", "mass": 0, "year": 0 }
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
 ```
 
 ###### Simple Request
@@ -138,7 +146,11 @@ from apiverve_meteoritelandings.apiClient import MeteoritesAPIClient, Meteorites
 
 api = MeteoritesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "Allende", "mass": 0, "year": 0 }
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
 
 try:
     result = api.execute(query)
@@ -159,7 +171,11 @@ from apiverve_meteoritelandings.apiClient import MeteoritesAPIClient, Meteorites
 
 api = MeteoritesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "Allende", "mass": 0, "year": 0 }
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
 
 try:
     result = api.execute(query)
@@ -193,7 +209,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_meteoritelandings.apiClient import MeteoritesAPIClient, MeteoritesAPIClientError
 
-query = { "name": "Allende", "mass": 0, "year": 0 }
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
 
 # Using context manager ensures proper cleanup
 with MeteoritesAPIClient("[YOUR_API_KEY]") as api:
@@ -219,7 +239,11 @@ from apiverve_meteoritelandings.apiClient import MeteoritesAPIClient
 # Enable debug mode
 api = MeteoritesAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "name": "Allende", "mass": 0, "year": 0 }
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -234,8 +258,13 @@ from apiverve_meteoritelandings.apiClient import MeteoritesAPIClient
 
 api = MeteoritesAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "name": "Allende",
+    "mass": 0,
+    "year": 0
+}
+
 try:
-    query = { "name": "Allende", "mass": 0, "year": 0 }
     result = api.execute(query)
     print(result)
 finally:
