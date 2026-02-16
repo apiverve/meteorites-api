@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/meteorites",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.",
   "main": "index.js",
   "types": "index.d.ts",
