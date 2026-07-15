@@ -30,7 +30,7 @@ class meteoritesWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/meteorites';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"name":{"type":"string","required":false},"mass":{"type":"number","required":false},"year":{"type":"number","required":false}};
+        this.validationRules = {"name":{"type":"string","required":true},"mass":{"type":"number","required":false},"year":{"type":"number","required":false}};
     }
 
     /**
