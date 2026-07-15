@@ -4,31 +4,43 @@ declare module '@apiverve/meteorites' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface meteoritesResponse {
     status: string;
     error: string | null;
     data: MeteoriteLandingsData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface MeteoriteLandingsData {
-      count:      number;
-      filteredOn: string[];
+      count:      number | null;
+      filteredOn: (null | string)[];
       meteors:    Meteor[];
   }
   
   interface Meteor {
-      name:        string;
-      recclass:    string;
-      mass:        string;
-      year:        string;
+      name:        null | string;
+      recclass:    null | string;
+      mass:        null | string;
+      year:        null | string;
       geolocation: Geolocation;
   }
   
   interface Geolocation {
-      type:        string;
-      coordinates: number[];
+      type:        null | string;
+      coordinates: (number | null)[];
   }
 
   export default class meteoritesWrapper {
