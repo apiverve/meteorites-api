@@ -26,7 +26,7 @@ paths:
           in: query
           schema:
             type: string
-          required: false
+          required: true
           description: The name of the meteorite you want to search for
           example: Allende
         - name: mass
@@ -34,13 +34,15 @@ paths:
           schema:
             type: number
           required: false
-          description: The mass of the meteorite in grams
+          description: Minimum mass of the meteorite in grams
+          example: 100
         - name: year
           in: query
           schema:
             type: number
           required: false
           description: The year the meteorite fell to Earth
+          example: 1969
       responses:
         '200':
           description: Successful Response
