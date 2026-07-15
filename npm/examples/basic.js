@@ -16,8 +16,8 @@ const api = new meteoritesAPI({
 // Example query
 var query = {
   name: "Allende",
-  mass: 0,
-  year: 0
+  mass: 100,
+  year: 1969
 };
 
 // Make the API request using callback
