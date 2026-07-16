@@ -25,12 +25,15 @@ namespace APIVerve.API.MeteoriteLandings
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("count")]
-        public long Count { get; set; }
+        public long? Count { get; set; }
 
         [JsonProperty("filteredOn")]
         public string[] FilteredOn { get; set; }
@@ -48,10 +51,10 @@ namespace APIVerve.API.MeteoriteLandings
         public string Recclass { get; set; }
 
         [JsonProperty("mass")]
-        public long Mass { get; set; }
+        public long? Mass { get; set; }
 
         [JsonProperty("year")]
-        public long Year { get; set; }
+        public long? Year { get; set; }
 
         [JsonProperty("geolocation")]
         public Geolocation Geolocation { get; set; }
@@ -63,6 +66,18 @@ namespace APIVerve.API.MeteoriteLandings
         public string Type { get; set; }
 
         [JsonProperty("coordinates")]
-        public double[] Coordinates { get; set; }
+        public double?[] Coordinates { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
