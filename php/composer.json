@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/meteorites",
+    "description": "Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "meteorites",
+        "meteorites",
+        "meteorite data",
+        "meteorites api",
+        "meteorite data api",
+        "meteorites tool"
+    ],
+    "homepage": "https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/meteorites",
+        "source": "https://github.com/apiverve/meteorites-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Meteorites\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Meteorites\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
