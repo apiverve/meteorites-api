@@ -17,15 +17,15 @@ namespace APIVerve.API.MeteoriteLandings
         public string Name { get; set; }
 
         /// <summary>
-        /// The mass of the meteorite in grams
+        /// Minimum mass of the meteorite in grams
         /// </summary>
         [JsonProperty("mass")]
-        public string Mass { get; set; }
+        public double? Mass { get; set; }
 
         /// <summary>
         /// The year the meteorite fell to Earth
         /// </summary>
         [JsonProperty("year")]
-        public string Year { get; set; }
+        public double? Year { get; set; }
     }
 }
