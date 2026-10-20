@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Meteorite Landings
   description: >-
-    Meteorites is a simple tool for getting meteorite data. It returns a list of
-    meteorites that have fallen to Earth.
+    Meteorite Landings searches recorded meteor strikes by specimen name and
+    minimum mass. Each record includes the official specimen name, meteorite
+    classification, mass in grams, and the recorded fall year.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/meteorites:
     get:
-      summary: Get Meteorites
+      summary: Meteorite Landings
       description: Get a list of meteorites that have fallen to Earth
       operationId: meteorites
       parameters:
