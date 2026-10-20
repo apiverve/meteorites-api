@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/meteorites",
-  "version": "1.2.0",
-  "description": "Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.",
+  "version": "1.2.2",
+  "description": "Meteorite Landings searches recorded meteor strikes by specimen name and minimum mass. Each record includes the official specimen name, meteorite classification, mass in grams, and the recorded fall year.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "meteorites", "meteorite data", "meteorites api", "meteorite data api", "meteorites tool"
+    "meteorite landings api", "meteorite search", "lookup meteorite strikes", "meteorite fall records", "search meteor landings"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/meteorites-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/meteorites?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/meteorites?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
