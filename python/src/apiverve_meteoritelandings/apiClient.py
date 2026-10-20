@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,7 +24,7 @@ class ValidationError(MeteoritesAPIClientError):
 class MeteoritesAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "name": {"type": "string", "required": False},
+        "name": {"type": "string", "required": True},
         "mass": {"type": "number", "required": False},
         "year": {"type": "number", "required": False}
     }
