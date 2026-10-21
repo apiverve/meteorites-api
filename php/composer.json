@@ -1,7 +1,7 @@
 {
     "name": "apiverve/meteorites",
-    "description": "Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.",
-    "version": "1.2.0",
+    "description": "Meteorite Landings searches recorded meteor strikes by specimen name and minimum mass. Each record includes the official specimen name, meteorite classification, mass in grams, and the recorded fall year.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "meteorites",
-        "meteorites",
-        "meteorite data",
-        "meteorites api",
-        "meteorite data api",
-        "meteorites tool"
+        "meteorite landings api",
+        "meteorite search",
+        "lookup meteorite strikes",
+        "meteorite fall records",
+        "search meteor landings"
     ],
-    "homepage": "https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/meteorites",

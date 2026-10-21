@@ -1,6 +1,6 @@
 # Meteorite Landings API - PHP Package
 
-Meteorites is a simple tool for getting meteorite data. It returns a list of meteorites that have fallen to Earth.
+Meteorite Landings searches recorded meteor strikes by specimen name and minimum mass. Each record includes the official specimen name, meteorite classification, mass in grams, and the recorded fall year.
 
 ## Installation
 
@@ -103,11 +103,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/meteorites?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/meteorites?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/meteorites?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
