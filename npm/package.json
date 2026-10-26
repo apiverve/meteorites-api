@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/meteorites",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Meteorite Landings searches recorded meteor strikes by specimen name and minimum mass. Each record includes the official specimen name, meteorite classification, mass in grams, and the recorded fall year.",
   "main": "index.js",
   "types": "index.d.ts",
